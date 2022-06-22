@@ -1,0 +1,153 @@
+*,
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background: grey;
+}
+
+header>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    border: 3px transparent solid;
+}
+
+header>div>p {
+    color: transparent;
+    text-align: right;
+}
+
+header>div:hover>p {
+    color: gray;
+}
+
+header>div:hover {
+    border-color: red;
+}
+
+header>div>div>img {
+    object-fit: cover;
+    width: 100%;
+}
+
+header>div>div>div:nth-child(1) {
+    display: flex;
+}
+
+header>div>div>div:nth-child(1)>p {
+    background: red;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+
+header>div>div>div:nth-child(1)>p:nth-child(2) {
+    background: green;
+    margin-left: 5px;
+}
+
+header>div>div:nth-child(3)>div:nth-child(3) {
+    display: flex;
+}
+
+header>div>div:nth-child(3)>div:nth-child(3)>ul {
+    display: flex;
+}
+
+header>div>div:nth-child(3)>div:nth-child(3)>p {
+   margin-left: 5px;
+   color: gray;
+}
+header>div>div:nth-child(3)>div:nth-child(3)>ul>li {
+    position: relative;
+    height: 15px;
+    width: 15px;
+}
+
+header>div>div:nth-child(3)>div:nth-child(3)>ul>li:not(:first-child) {
+    margin-left: 5px;
+}
+
+header>div>div:nth-child(3)>div:nth-child(3)>ul>li::after {
+    content: '';
+    background-image: url(./img/star.png);
+    background-size: cover;
+    display: block;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    left: 0;
+    top: 0;
+    position: relative;
+}
+header>div>div:nth-child(3)>div:nth-child(4){
+    color: gray;
+}
+header>div>div:nth-child(3)>div:nth-child(4)>div{
+    display: flex;
+    align-items: center;
+}
+header>div>div:nth-child(3)>div:nth-child(4)>div>p{
+    color: red;
+    font-size: 21px;
+    font-weight: bold;
+}
+header>div>div:nth-child(3)>div:nth-child(4)>div>h4{
+   background: rgb(192, 160, 160);
+   margin-left: 5px;
+   border-radius: 5px;
+   color: black;
+   padding: 1px 10px;
+}
+header>div>div:nth-child(3)>div:nth-child(4)>p{
+    text-decoration: line-through;
+}
+header>div>div:nth-child(3)>div:nth-child(5){
+    display: flex;
+    justify-content: space-evenly;
+}
+header>div>div:nth-child(3)>div:nth-child(5)>button{
+    border: none;
+}
+header>div>div:nth-child(3)>div:nth-child(5)>button:nth-child(1){
+    padding: 10px 50px;
+    background: green;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+header>div>div:nth-child(3)>div:nth-child(5)>button:nth-child(1):hover{
+  text-decoration: underline;
+}
+header>div>div:nth-child(3)>div:nth-child(5)>button:nth-child(2)::after{
+    content: '';
+    background-image: url(./img/Безымянный.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: block;
+    width: 30px;
+}
+
+header>div>div:nth-child(3)>div:nth-child(5)>button:nth-child(3)::after{
+    content: '';
+    background-image: url(./img/Безымянный.png);
+    background-size: cover;
+    background-position-x: 33px;
+    height: 100%;
+    display: block;
+    width: 30px;
+}
